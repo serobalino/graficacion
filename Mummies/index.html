@@ -21,8 +21,17 @@
 </head>
 <body style="padding:0; margin: 0; background: #000;">
 <script src="res/loading.js"></script>
+<div class="fb-share-button" data-href="http://grafipuce.bugs3.com" data-layout="button_count"></div>
 <canvas id="gameCanvas" width="800" height="450" style="margin-left:auto; margin-right:auto;"></canvas>
 <script src="frameworks/cocos2d-html5/CCBoot.js"></script>
 <script cocos src="main.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
